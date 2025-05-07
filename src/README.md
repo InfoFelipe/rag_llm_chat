@@ -15,7 +15,7 @@ Este é um projeto para criação de chatbots com RAG usando LangChain e o model
     * src/app.py: Contém a lógica do chatbot.
     * src/main.py: Ponto de entrada do projeto.
     * src/rag_pipeline.py: Lida com a pipeline RAG (Retrieval-Augmented Generation).
-    * src/data/teste.txt/: Arquivo usado para análise ou busca.
+    * src/data/teste.txt/: Arquivo usado para análise ou buscaando.
       
 3. **Explicação sobre o código**
    
@@ -88,7 +88,71 @@ Este é um projeto para criação de chatbots com RAG usando LangChain e o model
 
      2.  **src/app.py**
         
-     3.  **src/main.py**
+    Importações:
+   
+    * Importação: Importa a classe RagSystem de um módulo chamado rag_pipeline, que contém a implementação do sistema RAG (Retrieval-Augmented Generation).
+
+    * Função principal: `app_system()` é a função principal que orquestra todo o fluxo do chatbot.
+   
+         1. **Inicialização do Sistema RAG**
+
+            * Cria uma instância do sistema RAG.
+            * Define o caminho para o arquivo de dados que será usado como base de conhecimento.
+     
+         2. **Carregamento de Documentos**
+             * Tentativa de carregar e processar os documentos:
+
+               * Chama o método `oad_and_process_documents()` da instância RAG
+
+            * Se bem-sucedido, exibe mensagem de confirmação
+
+         3. **Tratamento de erros:**
+
+           * Se falhar, mostra o erro e encerra a função
+
+        4. **Interface do Chatbot**
+
+          * Exibe mensagens iniciais para o usuário
+          * Instruções básicas de uso
+
+       5. **Loop Principal de Interação**
+
+
+         * Loop infinito para manter o chatbot ativo
+
+         * Captura a entrada do usuário, removendo espaços extras
+
+         * Verifica se o usuário quer sair (comando "sair" ou "exit")
+
+       6. **Processamento das Consultas**
+
+
+         * Consulta o sistema RAG com a entrada do usuário.
+
+         * Exibe a resposta obtida ou uma mensagem padrão se não houver resposta.
+
+         * Trata possíveis erros durante o processamento da consulta.
+
+
+### Resumo do fluxo de execução
+
+* Importa e inicializa o sistema RAG
+
+* Carrega os documentos que servirão como base de conhecimento
+
+* Inicia a interface de chat com o usuário
+
+* Em loop contínuo:
+
+   * Recebe perguntas do usuário
+
+   * Processa através do sistema RAG
+
+   * Exibe respostas
+
+   * Sai do loop quando solicitado
+   
+     4.  **src/main.py**
         
    O código fornecido configura o ambiente de logging, inicializa a aplicação e gerencia o encerramento adequado da aplicação.
    
@@ -139,4 +203,3 @@ Este é um projeto para criação de chatbots com RAG usando LangChain e o model
   * Se tudo correr bem, a aplicação será encerrada de forma controlada com uma mensagem de sucesso.
   
   * Se o usuário interromper a execução ou se ocorrer algum erro, a aplicação é encerrada de maneira controlada, com mensagens apropriadas registradas no log.
-

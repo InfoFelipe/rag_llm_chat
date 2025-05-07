@@ -1,4 +1,4 @@
-from app import App_System
+from app import app_system
 import logging
 import sys
 from typing import NoReturn
@@ -23,7 +23,7 @@ if __name__ == "__main__":
     try:
         configure_logging()
         logging.info("Iniciando aplicação RAG Chat")
-        App_System()
+        app_system()
         graceful_exit("Aplicação encerrada normalmente")
     except KeyboardInterrupt:
         graceful_exit("\nAplicação interrompida pelo usuário")
