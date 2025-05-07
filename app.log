@@ -1,0 +1,75 @@
+2025-05-06 08:38:17,406 - root - INFO - Iniciando aplicação RAG Chat
+2025-05-06 08:38:25,981 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-05-06 08:38:25,981 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-05-06 08:38:32,275 - faiss.loader - INFO - Loading faiss with AVX2 support.
+2025-05-06 08:38:32,303 - faiss.loader - INFO - Successfully loaded faiss with AVX2 support.
+2025-05-06 08:38:32,309 - faiss - INFO - Failed to load GPU Faiss: name 'GpuIndexIVFFlat' is not defined. Will not load constructor refs for GPU indexes. This is only an error if you're trying to use GPU Faiss.
+2025-05-06 08:38:32,388 - root - ERROR - Erro fatal: Ollama call failed with status code 500. Details: {"error":"model requires more system memory (5.5 GiB) than is available (2.3 GiB)"}
+Traceback (most recent call last):
+  File "/home/felipe/Área de trabalho/rag_teste/src/main.py", line 26, in <module>
+    main()
+  File "/home/felipe/Área de trabalho/rag_teste/src/app.py", line 10, in main
+    response = load_rag_chain(user_input)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/felipe/Área de trabalho/rag_teste/src/rag_pipeline.py", line 47, in load_rag_chain
+    response = rag_chain.invoke({"input": question})
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/felipe/Área de trabalho/rag_teste/.venv/lib/python3.12/site-packages/langchain_core/runnables/base.py", line 5416, in invoke
+    return self.bound.invoke(
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/felipe/Área de trabalho/rag_teste/.venv/lib/python3.12/site-packages/langchain_core/runnables/base.py", line 3034, in invoke
+    input = context.run(step.invoke, input, config)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/felipe/Área de trabalho/rag_teste/.venv/lib/python3.12/site-packages/langchain_core/runnables/passthrough.py", line 511, in invoke
+    return self._call_with_config(self._invoke, input, config, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/felipe/Área de trabalho/rag_teste/.venv/lib/python3.12/site-packages/langchain_core/runnables/base.py", line 1930, in _call_with_config
+    context.run(
+  File "/home/felipe/Área de trabalho/rag_teste/.venv/lib/python3.12/site-packages/langchain_core/runnables/config.py", line 428, in call_func_with_variable_args
+    return func(input, **kwargs)  # type: ignore[call-arg]
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/felipe/Área de trabalho/rag_teste/.venv/lib/python3.12/site-packages/langchain_core/runnables/passthrough.py", line 497, in _invoke
+    **self.mapper.invoke(
+      ^^^^^^^^^^^^^^^^^^^
+  File "/home/felipe/Área de trabalho/rag_teste/.venv/lib/python3.12/site-packages/langchain_core/runnables/base.py", line 3760, in invoke
+    output = {key: future.result() for key, future in zip(steps, futures)}
+                   ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/felipe/Área de trabalho/rag_teste/.venv/lib/python3.12/site-packages/langchain_core/runnables/base.py", line 3744, in _invoke_step
+    return context.run(
+           ^^^^^^^^^^^^
+  File "/home/felipe/Área de trabalho/rag_teste/.venv/lib/python3.12/site-packages/langchain_core/runnables/base.py", line 5416, in invoke
+    return self.bound.invoke(
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/felipe/Área de trabalho/rag_teste/.venv/lib/python3.12/site-packages/langchain_core/runnables/base.py", line 3034, in invoke
+    input = context.run(step.invoke, input, config)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/felipe/Área de trabalho/rag_teste/.venv/lib/python3.12/site-packages/langchain_core/language_models/llms.py", line 387, in invoke
+    self.generate_prompt(
+  File "/home/felipe/Área de trabalho/rag_teste/.venv/lib/python3.12/site-packages/langchain_core/language_models/llms.py", line 764, in generate_prompt
+    return self.generate(prompt_strings, stop=stop, callbacks=callbacks, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/felipe/Área de trabalho/rag_teste/.venv/lib/python3.12/site-packages/langchain_core/language_models/llms.py", line 971, in generate
+    return self._generate_helper(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/felipe/Área de trabalho/rag_teste/.venv/lib/python3.12/site-packages/langchain_core/language_models/llms.py", line 790, in _generate_helper
+    self._generate(
+  File "/home/felipe/Área de trabalho/rag_teste/.venv/lib/python3.12/site-packages/langchain_community/llms/ollama.py", line 437, in _generate
+    final_chunk = super()._stream_with_aggregation(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/felipe/Área de trabalho/rag_teste/.venv/lib/python3.12/site-packages/langchain_community/llms/ollama.py", line 349, in _stream_with_aggregation
+    for stream_resp in self._create_generate_stream(prompt, stop, **kwargs):
+  File "/home/felipe/Área de trabalho/rag_teste/.venv/lib/python3.12/site-packages/langchain_community/llms/ollama.py", line 194, in _create_generate_stream
+    yield from self._create_stream(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "/home/felipe/Área de trabalho/rag_teste/.venv/lib/python3.12/site-packages/langchain_community/llms/ollama.py", line 273, in _create_stream
+    raise ValueError(
+ValueError: Ollama call failed with status code 500. Details: {"error":"model requires more system memory (5.5 GiB) than is available (2.3 GiB)"}
+2025-05-06 08:38:32,395 - root - INFO - Aplicação encerrada devido a um erro: Ollama call failed with status code 500. Details: {"error":"model requires more system memory (5.5 GiB) than is available (2.3 GiB)"}

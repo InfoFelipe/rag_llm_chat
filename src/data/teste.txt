@@ -1,0 +1,60 @@
+Definição da inteligência artificial
+A inteligência artificial é um campo da ciência que se concentra na criação de computadores e máquinas que podem raciocinar, aprender e atuar de maneira que normalmente exigiria inteligência humana ou que envolve dados com escala maior do que as pessoas podem analisar. 
+
+A IA é um campo amplo que abrange muitas disciplinas diferentes, como ciência da computação, estatísticas e análises de dados, engenharia de hardware e software, linguística, neurociência e até mesmo filosofia e psicologia. 
+
+Em um nível operacional para uso comercial, a IA é um conjunto de tecnologias baseadas principalmente em machine learning e aprendizado profundo, usada para análise de dados, previsões e previsão, categorização de objetos, processamento de linguagem natural, recomendações, recuperação inteligente de dados e muito mais.
+
+Como a IA funciona?
+Embora as especificidades variem de acordo com as técnicas de IA, o princípio básico gira em torno dos dados. Os sistemas de IA aprendem e melhoram por meio da exposição a grandes quantidades de dados, identificando padrões e relações que os humanos podem não perceber.
+
+Esse processo de aprendizado geralmente envolve algoritmos, que são conjuntos de regras ou instruções que orientam a análise e a tomada de decisões da IA. Em machine learning, um subconjunto conhecido da IA, algoritmos são treinados em dados rotulados ou não rotulados para fazer previsões ou categorizar informações. 
+
+O aprendizado profundo, uma especialização adicional, utiliza redes neurais artificiais com várias camadas para processar informações, imitando a estrutura e a função do cérebro humano. Com o aprendizado e a adaptação contínuos, os sistemas de IA se tornam cada vez mais competentes para realizar tarefas específicas, como reconhecer imagens, traduzir idiomas e muito mais.
+
+Quer saber como começar a usar a IA? Confira a introdução à IA generativa para iniciantes.
+
+Tipos de inteligência artificial
+A inteligência artificial pode ser organizada de várias maneiras, dependendo dos estágios de desenvolvimento ou das ações realizadas. 
+
+Por exemplo, quatro estágios de desenvolvimento de IA são comumente reconhecidos.
+
+Máquinas reativas: IA limitada que só reage a diferentes tipos de estímulos com base em regras pré-programadas. Não usa memória e, portanto, não pode aprender com novos dados. O Deep Blue da IBM, que superou o campeão de xadrez Garry Kasparov em 1997, foi um exemplo de máquina reativa.
+Memória limitada: a maior parte da IA moderna é considerada memória limitada. Ele pode usar memória para melhorar ao longo do tempo sendo treinado com novos dados, normalmente por meio de uma rede neural artificial ou outro modelo de treinamento. Aprendizado profundo, um subconjunto do machine learning, é considerado inteligência artificial de memória limitada.
+Teoria da mente: a teoria da mente não existe atualmente, mas a pesquisa está avançando em suas possibilidades. Descreve a IA que pode emular a mente humana e tem recursos de tomada de decisão iguais aos de um humano, incluindo o reconhecimento e memorização de emoções e a reação em situações sociais como um humano. 
+Autoconhecimento : um passo acima da teoria da IA de IA, ela descreve uma máquina mística que está ciente da própria existência e tem os recursos intelectuais e emocionais do ser humano. Como a teoria da IA de mente, a IA de autoconhecimento ainda não existe.
+Uma maneira mais útil de categorizar amplamente os tipos de inteligência artificial é o que a máquina pode fazer. Tudo que chamamos de "inteligência artificial" é considerado inteligência artificial "estreita", porque consegue executar apenas conjuntos limitados de ações com base na programação e no treinamento. Por exemplo, um algoritmo de IA usado para classificação de objetos não poderá realizar o processamento de linguagem natural. A Pesquisa Google é uma forma de IA estreita assim como análises preditivas ou assistentes virtuais.
+
+A inteligência artificial geral (AGI, na sigla em inglês) seria a capacidade de uma máquina "sentir, pensar e atuar", como uma pessoa. A AGI não existe no momento. O próximo nível seria a superinteligência artificial (ASI), em que a máquina funcionará de todas as maneiras superiores a uma pessoa. 
+
+Modelos de treinamento de inteligência artificial
+Quando as empresas falam sobre IA, muitas vezes falam sobre "dados de treinamento". Mas o que isso significa? Lembre-se de que a inteligência artificial de memória limitada é uma IA que melhora com o tempo, sendo treinada com novos dados. Machine learning é um subconjunto da inteligência artificial que usa algoritmos para treinar dados e conseguir resultados.
+
+Em geral, três tipos de modelos de aprendizado costumam ser usados em machine learning:
+
+Aprendizado supervisionado é um modelo de machine learning que mapeia uma entrada específica para uma saída usando dados de treinamento rotulados (dados estruturados). Em termos simples, para treinar o algoritmo a reconhecer imagens de gatos, alimente-as com imagens marcadas como gatos.
+
+O Aprendizado não supervisionado é um modelo de machine learning que aprende padrões com base em dados não rotulados (dados não estruturados). Diferentemente do aprendizado supervisionado, o resultado final não é conhecido antecipadamente. Em vez disso, o algoritmo aprende com os dados, categorizando-os em grupos com base em atributos. Por exemplo, o aprendizado não supervisionado é bom em correspondência de padrões e modelagem descritiva. 
+
+Além do aprendizado supervisionado e não supervisionado, uma abordagem mista chamada aprendizado semi-supervisionado costuma ser empregada, em que apenas alguns dados são rotulados. Na aprendizagem semi-supervisionada, um resultado final é conhecido, mas o algoritmo precisa descobrir como organizar e estruturar os dados para alcançar os resultados desejados.
+
+O aprendizado por reforço é um modelo de machine learning que pode ser descrito como "aprender por". Um "agente" aprende a executar uma tarefa definida por tentativa e erro (um loop de feedback) até que o desempenho esteja dentro de um intervalo desejável. O agente recebe reforço positivo quando executa a tarefa bem e reforço negativo quando tem um desempenho ruim. Um exemplo de aprendizado por reforço seria ensinar uma mão robótica a pegar uma bola. 
+
+Tipos comuns de redes neurais artificiais
+Um tipo comum de modelo de treinamento na IA é uma rede neural artificial, que é vagamente baseada no cérebro humano. 
+
+Uma rede neural é um sistema de neurônios artificiais, às vezes chamados de perceptrons, que são nós computacionais usados para classificar e analisar dados. Os dados são alimentados na primeira camada de uma rede neural, em que cada percepção recebe uma decisão e, em seguida, transmite essas informações a vários nós na próxima camada. Os modelos de treinamento com mais de três camadas são chamados de "redes neurais profundas" ou " aprendizado profundo". Algumas redes neurais modernas têm centenas ou milhares de camadas. A saída dos percetrons finais realiza a tarefa definida para a rede neural, como classificar um objeto ou encontrar padrões nos dados. 
+
+Alguns dos tipos mais comuns de redes neurais artificiais que você pode encontrar incluem:
+
+As redes neurais do feedforward (FF, na sigla em inglês) são uma das formas mais antigas de redes neurais, com dados fluindo de formas por neurônios artificiais até a saída ser alcançada. Nos dias de hoje, a maioria das redes neurais de avanço e retorno é considerada um “feedfeed profundo” com várias camadas (e mais de uma camada oculta). As redes neurais de encaminhamento geralmente são pareadas com um algoritmo de correção de erros chamado "retropropagação", que, em termos simples, começa com o resultado da rede neural e funciona desde o começo. encontrar erros para melhorar a precisão da rede neural. Muitas redes neurais simples, mas poderosas, são de encaminhamento.
+
+As redes neurais recorrentes (RNN, na sigla em inglês) são diferentes das redes neurais de encaminhamento, porque usam dados de séries temporais ou envolvem sequências. Ao contrário das redes neurais de encaminhamento, que usam pesos em cada nó da rede, as redes neurais recorrentes têm "memória" do que aconteceu na camada anterior como consequência da saída da camada atual. de dados. Por exemplo, ao realizar o processamento de linguagem natural, as RNNs podem "lembrar" de outras palavras usadas em uma frase. As RNNs são frequentemente usadas para reconhecimento de fala, tradução e legendas. 
+
+A memória de curto prazo longa (LSTM) é uma forma avançada de RNN que pode usar memória para “lembrar” o que aconteceu em camadas anteriores. A diferença entre RNNs e LSTMs é que a LSTM pode lembrar o que aconteceu várias camadas atrás, usando as "células de memória". A LSTM é geralmente usada em reconhecimento de fala e previsões. 
+
+As redes neurais convolucionais (CNN) incluem algumas das redes neurais mais comuns na inteligência artificial moderna. Geralmente usadas no reconhecimento de imagens, as CNNs usam várias camadas distintas (uma camada convolucional e, depois, uma camada de pool) que filtram partes diferentes de uma imagem antes de reativá-la (na camada completamente conectada). As camadas convolucionais anteriores podem procurar recursos simples de uma imagem, como cores e bordas, antes de procurar recursos mais complexos em camadas adicionais.
+
+As redes adversárias generativas (GAN, na sigla em inglês) envolvem duas redes neurais concorrentes entre si em um jogo que, por fim, melhora a precisão da saída. Uma rede (o gerador) cria exemplos de que a outra rede (o discriminador) tenta provar que é verdadeira ou falsa. As GANs têm sido usadas para criar imagens realistas e até mesmo fazer arte.
+
+
